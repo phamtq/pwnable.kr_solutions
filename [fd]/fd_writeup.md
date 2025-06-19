@@ -152,7 +152,7 @@ But I'm curious what the rest of the code is doing. Because we didn't have the p
 fd@ubuntu:~$ man setregid
 ```
 
-The `setregid()` function sets the read and/or effective user or group ID of the process that called it. Not sure what the difference between a real vs effective ID is. A quick Google shows this [StackOverflow post](https://stackoverflow.com/questions/32455684/difference-between-real-user-id-effective-user-id-and-saved-user-id) that explains:
+The `setregid()` function sets the real and/or effective user or group ID of the process that called it. Not sure what the difference between a real vs effective ID is. A quick Google shows this [StackOverflow post](https://stackoverflow.com/questions/32455684/difference-between-real-user-id-effective-user-id-and-saved-user-id) that explains:
 
 >So, the real user id is who you really are (the one who owns the process), and the effective user id is what the operating system looks at to make a decision whether or not you are allowed to do something (most of the time, there are some exceptions).
 
